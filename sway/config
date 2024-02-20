@@ -23,7 +23,7 @@ exec emacs --daemon
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/archlinux/wave.png fill
+output * bg /usr/share/backgrounds/archlinux/retrofuture.png fill
 #
 # Example configuration:
 #
@@ -57,13 +57,14 @@ output * bg /usr/share/backgrounds/archlinux/wave.png fill
 # Read `man 5 sway-input` for more information about this section.
 default_border pixel 2
 gaps inner 5
-gaps outer 5
-gaps horizontal 5
-gaps vertical 5
+gaps outer 0
+
+
 
 blur enable
 corner_radius 10
-
+default_dim_inactive 0.5
+dim_inactive_colors.unfocused #00000055
 
 set $cl_high #9c44e3
 set $cl_indi #591a84
@@ -221,6 +222,7 @@ bindsym $mod+r mode "resize"
 # Status Bar:
 #
 # Read `man 5 sway-bar` for more information about this section.
+layer_effects "waybar" blur enable
 bar {
     #position top
     swaybar_command waybar
