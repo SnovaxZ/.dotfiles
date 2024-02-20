@@ -1,2 +1,3 @@
 # .dotfiles
-My SwayFX etc. config files
+My (Partially kitbashed) .config files so I can get them where ever I want
+SwayFX
